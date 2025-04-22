@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Interactivo: Marxismo-Leninismo-Mariateguismo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilo para la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Gray 50 */
+        }
+        .module-container {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            overflow: hidden; /* Para contener bordes redondeados */
+        }
+        .module-header {
+            background-color: #4f46e5; /* Indigo 600 */
+            color: white;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        .module-header:hover {
+            background-color: #4338ca; /* Indigo 700 */
+        }
+        .module-content {
+            padding: 1.5rem;
+            border-top: 1px solid #e5e7eb; /* Gray 200 */
+            display: none; /* Oculto por defecto */
+        }
+        .module-content.active {
+            display: block;
+        }
+        /* Estilos para secciones internas (details/summary) */
+        details {
+            background-color: #f3f4f6; /* Gray 100 */
+            border: 1px solid #e5e7eb; /* Gray 200 */
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        details[open] {
+             background-color: #eef2ff; /* Indigo 50 */
+        }
+        summary {
+            padding: 0.75rem 1.25rem;
+            cursor: pointer;
+            font-weight: 500;
+            color: #1f2937; /* Gray 800 */
+            list-style: none; /* Quitar marcador por defecto */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Ocultar marcador en Chrome/Safari */
+        }
+        summary::after { /* Indicador de expansión */
+            content: '+';
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #6366f1; /* Indigo 500 */
+            transition: transform 0.2s ease-in-out;
+        }
+        details[open] summary::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        .details-content {
+            padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+            color: #374151; /* Gray 700 */
+            line-height: 1.6;
+        }
+        .details-content p, .details-content ul {
+            margin-bottom: 0.75rem;
+        }
+         .details-content ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+         }
+         .details-content strong {
+             color: #111827; /* Gray 900 */
+         }
+         .arrow-indicator {
+             font-size: 1.5rem;
+             transition: transform 0.3s ease;
+         }
+         .arrow-indicator.rotated {
+             transform: rotate(180deg);
+         }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="p-4 md:p-8">
+
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Curso Interactivo: Marxismo-Leninismo-Mariateguismo</h1>
+
+    <div class="module-container">
+        <div class="module-header" onclick="toggleModule(1)">
+            <span>Módulo 1: Fundamentos del Marxismo</span>
+            <span class="arrow-indicator" id="arrow-1">▼</span>
+        </div>
+        <div class="module-content" id="content-1">
+            <p class="mb-4 text-gray-600">Este módulo sienta las bases para entender las perspectivas del marxismo-leninismo y el mariáteguismo.</p>
+
+            <details>
+                <summary>Introducción al pensamiento marxista</summary>
+                <div class="details-content">
+                    <p>El marxismo se presenta como un sistema de pensamiento que busca comprender la realidad en su totalidad, abarcando <strong>filosofía, economía política y socialismo científico</strong>. No se trata de disciplinas aisladas, sino de aspectos interconectados que permiten analizar la naturaleza, la sociedad y el pensamiento humano de manera integral.</p>
+                    <p>El marxismo surgió hace más de cien años como la ideología de la <strong>clase revolucionaria</strong>, ofreciendo una perspectiva crítica sobre el orden social existente y proponiendo una alternativa. A diferencia de otras teorías sociales y filosóficas que no superaron la prueba del tiempo, el marxismo ha demostrado su veracidad a través del curso de la historia universal.</p>
+                    <p>Para comprender los acontecimientos actuales y orientarse conscientemente en el mundo, es fundamental asimilar los fundamentos del marxismo.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>El materialismo dialéctico como base filosófica</summary>
+                <div class="details-content">
+                    <p>El materialismo dialéctico constituye la base filosófica del marxismo-leninismo. Se fundamenta en la idea de que <strong>el mundo es material</strong> y existe independientemente de nuestra conciencia. La materia y la energía son los componentes primordiales del universo, el cual ha evolucionado a lo largo de miles de millones de años.</p>
+                    <p>Este universo se caracteriza por el <strong>movimiento, el cambio y la interconexión</strong> de todos los fenómenos. La dialéctica es la lógica apropiada para comprender esta realidad en constante transformación.</p>
+                    <p><strong>Leyes fundamentales de la dialéctica:</strong></p>
+                    <ul>
+                        <li><strong>Tránsito de los cambios cuantitativos a los cualitativos:</strong> Los cambios graduales y acumulativos en la cantidad eventualmente conducen a un salto cualitativo, transformando la naturaleza esencial de un objeto o fenómeno. (Ej: agua a vapor). Este principio también se aplica al desarrollo social (acumulación de contradicciones -> transformación revolucionaria). La transición del socialismo al comunismo se opera gradualmente, culminando en un salto.</li>
+                        <li><strong>Unidad y lucha de contrarios:</strong> En todo objeto o fenómeno existen fuerzas o aspectos opuestos (contradicciones internas) que están en unidad e interacción constante. Esta lucha de contrarios es la fuente fundamental de todo desarrollo y cambio. (Ej: burguesía vs proletariado).</li>
+                        <li><strong>Negación de la negación:</strong> El desarrollo no sigue una línea recta, sino un movimiento en espiral donde cada etapa posterior niega la etapa anterior, pero a su vez es negada por una etapa superior, conservando los elementos positivos de las etapas previas. (Ej: propiedad individual -> propiedad privada capitalista -> propiedad colectiva socialista).</li>
+                    </ul>
+                    <p>La dialéctica marxista es enemiga de todo esquematismo y exige un <strong>análisis concreto de la realidad</strong>. La verdad abstracta no existe; la verdad es siempre concreta.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>El materialismo histórico</summary>
+                <div class="details-content">
+                    <p>El materialismo histórico es la aplicación de los principios del materialismo dialéctico al estudio de la sociedad y la historia. Postula que la base de toda sociedad es su <strong>estructura económica</strong> (el modo en que se produce y reproduce la existencia material).</p>
+                    <p>Esta base económica determina, en última instancia, la <strong>superestructura</strong> de la sociedad (instituciones políticas y jurídicas, formas de conciencia social, relaciones sociales).</p>
+                    <p><strong>Elementos clave:</strong></p>
+                    <ul>
+                        <li><strong>Las fuerzas productivas:</strong> Incluyen los medios de producción (instrumentos, materias primas, tecnología) y la fuerza de trabajo (capacidad humana). Su desarrollo es fundamental.</li>
+                        <li><strong>Las relaciones de producción:</strong> Son las relaciones sociales en la producción (propiedad sobre medios de producción, distribución). Deben corresponder al nivel de las fuerzas productivas. Cuando se vuelven un obstáculo, surge un conflicto que lleva a una revolución social.</li>
+                        <li><strong>La lucha de clases:</strong> La historia es la historia de la lucha de clases (explotadoras vs explotadas). Esta lucha es el motor de la historia.</li>
+                    </ul>
+                    <p>El materialismo histórico no es un dogma, sino una teoría viva, un método científico y una guía para la acción.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Crítica marxista al capitalismo</summary>
+                <div class="details-content">
+                     <p>Desde la perspectiva del materialismo histórico, el capitalismo es una formación económico-social específica con sus propias leyes y contradicciones. La crítica marxista se centra en su naturaleza explotadora:</p>
+                    <ul>
+                        <li><strong>Plusvalor:</strong> Valor creado por el trabajo obrero por encima del valor de su fuerza de trabajo (salario), apropiado por el capitalista como ganancia. La búsqueda del aumento del plusvalor es clave. La economía burguesa fetichiza el mercado y oculta esta explotación.</li>
+                        <li><strong>Lucha de clases:</strong> Intensificación de la lucha entre la burguesía (propietaria) y el proletariado (vende fuerza de trabajo).</li>
+                        <li><strong>Concentración del capital y monopolización:</strong> Tendencia a la concentración del capital y al surgimiento de monopolios. El imperialismo es la fase superior, con dominio de monopolios, capital financiero, exportación de capitales y división del mundo.</li>
+                        <li><strong>Enajenación (Alineación):</strong> El trabajador se separa del producto de su trabajo, del acto de trabajar, de su naturaleza humana y de sus semejantes. El trabajo se vuelve un medio de subsistencia, no de realización.</li>
+                        <li><strong>Contradicciones inherentes:</strong> Ej: producción social vs apropiación privada; crecimiento productivo vs limitaciones del mercado. Conducen a crisis y a su superación histórica.</li>
+                    </ul>
+                     <p>La crítica marxista busca desenmascarar la seudociencia de la economía burguesa.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>La teoría del valor-trabajo</summary>
+                <div class="details-content">
+                    <p>Pilar fundamental de la economía política marxista. Sostiene que el valor de una mercancía está determinado por la cantidad de <strong>trabajo socialmente necesario</strong> requerido para su producción.</p>
+                    <p>El <strong>trabajo vivo</strong> (actividad laboral) se objetiva como valor (trabajo objetivado). El capital busca la <strong>valorización</strong> (crear más valor del invertido) a través de la explotación del trabajo.</p>
+                    <p>La comprensión del proceso de producción y la génesis del plusvalor requiere un desarrollo categorial dialéctico. La economía política burguesa, al partir del mercado y no construir estas categorías, realiza análisis falsos y fetichistas.</p>
+                </div>
+            </details>
+             <p class="mt-4 text-gray-600">Este módulo proporciona las herramientas conceptuales esenciales para comprender el análisis marxista del capitalismo y la visión del socialismo.</p>
+        </div>
+    </div>
+
+    <div class="module-container">
+        <div class="module-header" onclick="toggleModule(2)">
+            <span>Módulo 2: El Socialismo Científico y el Papel del Proletariado</span>
+            <span class="arrow-indicator" id="arrow-2">▼</span>
+        </div>
+        <div class="module-content" id="content-2">
+             <p class="mb-4 text-gray-600">Este módulo aborda la inevitabilidad histórica del socialismo, el papel del proletariado y la necesidad de una guía teórica y organizativa.</p>
+
+             <details>
+                 <summary>Inevitabilidad del socialismo y misión histórica del proletariado</summary>
+                 <div class="details-content">
+                     <p>El socialismo no es un ideal, sino una <strong>consecuencia necesaria</strong> de las contradicciones del capitalismo (lucha de clases burguesía vs proletariado).</p>
+                     <p>El capitalismo reemplaza la explotación velada por una <strong>explotación abierta y brutal</strong>. El proletariado, despojado de medios de producción, surge como la negación del capitalismo. Su miseria deriva de sus condiciones de trabajo.</p>
+                     <p>La dialéctica enseña que ningún régimen social es inmutable. Las formas sociales caducan y son sustituidas por otras más elevadas mediante la <strong>lucha de clases</strong> y la revolución social.</p>
+                     <p>El socialismo científico demuestra ser el resultado necesario del desarrollo económico capitalista y la lucha de clases. La <strong>misión histórica universal del proletariado</strong> es enterrar al capitalismo y construir la sociedad socialista, acabando con toda explotación y las clases.</p>
+                 </div>
+             </details>
+
+             <details>
+                 <summary>El papel del partido de vanguardia</summary>
+                 <div class="details-content">
+                     <p>Para derrocar al capitalismo, el proletariado debe pasar de "clase en sí" (objetiva) a <strong>"clase para sí"</strong> (consciente de sus intereses), organizándose en un partido político.</p>
+                     <p>El <strong>partido marxista es la vanguardia</strong> del proletariado: destacamento avanzado, organizado y activo, basado en el marxismo-leninismo.</p>
+                     <p>Su misión es inculcar la ideología socialista y guiar con la teoría revolucionaria. Es necesario porque la mayoría obrera no alcanza espontáneamente la conciencia de vanguardia.</p>
+                     <p>El partido representa la <strong>fusión de la teoría socialista con el movimiento obrero</strong>, permitiendo actuar como fuerza única y organizada.</p>
+                     <p>La concepción científica del mundo (materialismo dialéctico e histórico) permite al partido trazar una orientación certera.</p>
+                 </div>
+             </details>
+
+             <details>
+                 <summary>Relación entre teoría y práctica revolucionaria</summary>
+                 <div class="details-content">
+                     <p>Existe una conexión inseparable: <strong>"Sin teoría revolucionaria, no puede haber movimiento revolucionario"</strong>. El marxismo-leninismo es la brújula que guía la lucha.</p>
+                     <p>La <strong>práctica histórico-social</strong> es fundamental para desarrollar y verificar la teoría. La teoría surgió generalizando la práctica obrera y debe plasmarse cotidianamente en hechos.</p>
+                     <p>Cuando las ideas socialistas penetran en las masas, la lucha espontánea se vuelve <strong>lucha consciente</strong>. El partido es crucial en este proceso.</p>
+                     <p>La unidad de ciencia y actividad práctica es la estrella polar de los partidos marxistas.</p>
+                 </div>
+             </details>
+
+             <details>
+                 <summary>Crítica al socialismo utópico y fundamentación científica</summary>
+                 <div class="details-content">
+                     <p>Los <strong>socialistas utópicos</strong> criticaban el capitalismo pero no comprendían el carácter social del proletariado como fuerza transformadora. Ignoraban los caminos y medios, apelando a todas las clases.</p>
+                     <p>El <strong>socialismo científico</strong> se basa en el análisis profundo del capitalismo y sus leyes. Demuestra que el socialismo es el resultado necesario de la lucha de clases y las contradicciones capitalistas.</p>
+                     <p>Para convertir la utopía en ciencia, Marx y Engels superaron el idealismo y la metafísica con el <strong>materialismo dialéctico e histórico</strong>, base científica para comprender y transformar la realidad.</p>
+                 </div>
+             </details>
+
+             <details>
+                 <summary>Concepción marxista de la conciencia de clase</summary>
+                 <div class="details-content">
+                     <p>La <strong>conciencia de clase</strong> es la comprensión del proletariado de su posición, intereses comunes y antagonismo con la burguesía.</p>
+                     <p>Se distingue entre "clase en sí" (objetiva) y <strong>"clase para sí"</strong> (consciente y organizada).</p>
+                     <p>El desarrollo de la conciencia no es automático, se produce a través de la <strong>lucha de clases</strong> (económica, política, ideológica).</p>
+                     <p>La <strong>lucha ideológica</strong> es clave para emancipar a los obreros de las ideas burguesas e inculcar la ideología socialista. Mientras no tengan su propia ideología (marxismo) y partido, permanecen bajo influencia burguesa.</p>
+                 </div>
+             </details>
+             <p class="mt-4 text-gray-600">Este módulo profundiza en la naturaleza científica del socialismo marxista, el papel del proletariado, la importancia del partido y la conciencia de clase.</p>
+        </div>
+    </div>
+
+    <div class="module-container">
+        <div class="module-header" onclick="toggleModule(3)">
+            <span>Módulo 3: Desarrollo del Marxismo en el Leninismo</span>
+             <span class="arrow-indicator" id="arrow-3">▼</span>
+        </div>
+        <div class="module-content" id="content-3">
+            <p class="mb-4 text-gray-600">Este módulo explora cómo Lenin desarrolló y adaptó el marxismo a la época del imperialismo.</p>
+
+            <details>
+                <summary>El imperialismo como fase superior del capitalismo</summary>
+                <div class="details-content">
+                    <p>Lenin caracterizó su época como la fase del <strong>imperialismo</strong>, con características clave:</p>
+                    <ul>
+                        <li><strong>Concentración del capital y monopolios:</strong> La libre competencia da paso a grandes monopolios que controlan la economía.</li>
+                        <li><strong>Fusión del capital bancario e industrial:</strong> Creación del capital financiero y una oligarquía financiera dominante.</li>
+                        <li><strong>Exportación de capitales:</strong> Más importante que la exportación de mercancías, buscando mayores ganancias en otros países.</li>
+                        <li><strong>Asociaciones monopolistas internacionales:</strong> Reparto de mercados y esferas de influencia económica global.</li>
+                        <li><strong>Terminación del reparto territorial del mundo:</strong> Lucha intensa por el reparto y nuevo reparto del mundo entre potencias, llevando a guerras imperialistas.</li>
+                    </ul>
+                    <p>El imperialismo es la <strong>última etapa del capitalismo</strong>, con contradicciones que llevan a la revolución socialista.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Teoría leninista de la revolución proletaria</summary>
+                <div class="details-content">
+                    <p>A diferencia de Marx/Engels (revolución simultánea), Lenin concluyó que el <strong>desarrollo desigual</strong> del capitalismo imperialista hacía posible la victoria socialista en <strong>uno o varios países</strong> por separado.</p>
+                    <p>El sistema imperialista estaba maduro, pero las contradicciones se agudizaban desigualmente, creando <strong>"eslabones débiles"</strong> donde la revolución podía comenzar (incluso si no eran los más industrializados).</p>
+                    <p>La Revolución Rusa confirmó esta teoría.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Importancia de la alianza obrero-campesina</summary>
+                <div class="details-content">
+                    <p>Lenin dio importancia crucial a la <strong>alianza obrero-campesina</strong> como fuerza motriz, especialmente en países como Rusia.</p>
+                    <p>El campesinado también sufría explotación. El proletariado necesitaba atraerlo como aliado para derrocar a la burguesía y terratenientes, garantizando una <strong>fuerza revolucionaria mayoritaria</strong>.</p>
+                    <p>La alianza se basaba en un enemigo común y beneficios mutuos tras la revolución. La <strong>hegemonía del proletariado</strong> dentro de la alianza era fundamental.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Concepción leninista del partido revolucionario</summary>
+                <div class="details-content">
+                    <p>El partido es la <strong>vanguardia organizada</strong>, indispensable para la revolución y la dictadura del proletariado. Se basa en el <strong>centralismo democrático</strong>:</p>
+                    <ul>
+                        <li>Libertad de discusión, unidad de acción.</li>
+                        <li>Dirección centralizada.</li>
+                        <li>Elección y rendición de cuentas de dirigentes.</li>
+                    </ul>
+                    <p>La <strong>disciplina férrea</strong> era esencial. Lenin insistió en la lucha constante contra el <strong>oportunismo</strong> (sacrificar intereses fundamentales) y el <strong>revisionismo</strong> (revisar principios marxistas).</p>
+                    <p>Estas corrientes debilitaban al movimiento obrero. El partido debía ser de revolucionarios profesionales.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Análisis concreto de la situación concreta</summary>
+                <div class="details-content">
+                    <p>Principio fundamental de la táctica leninista: analizar cada situación específica para determinar la táctica adecuada, <strong>sin aplicar dogmas mecánicamente</strong>.</p>
+                    <p>Considerar particularidades de cada país/momento y correlación de fuerzas. Oposición al dogmatismo.</p>
+                    <p>Enfoque <strong>flexible y adaptable</strong>, subordinado a la estrategia revolucionaria. Identificar el "eslabón fundamental".</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Materialismo filosófico de Lenin</summary>
+                <div class="details-content">
+                    <p>Lenin defendió y desarrolló el <strong>materialismo dialéctico e histórico</strong> ("Materialismo y empiriocriticismo") contra corrientes idealistas y subjetivistas.</p>
+                    <p>Insistió en la <strong>primacía de la materia</strong>, el carácter cognoscible del mundo y la <strong>práctica social como criterio de verdad</strong>.</p>
+                    <p>Desarrolló la teoría del reflejo y profundizó en la dialéctica.</p>
+                    <p>Consideraba la defensa del materialismo inseparable de la lucha política, ya que el idealismo oscurecía la explotación y desviaba de la revolución.</p>
+                </div>
+            </details>
+             <p class="mt-4 text-gray-600">El leninismo adaptó creativamente el marxismo a la época del imperialismo, desarrollando nuevas teorías sobre la revolución, el partido y la filosofía.</p>
+        </div>
+    </div>
+
+    <div class="module-container">
+        <div class="module-header" onclick="toggleModule(4)">
+            <span>Módulo 4: El Marxismo en el Contexto Latinoamericano: Mariátegui</span>
+             <span class="arrow-indicator" id="arrow-4">▼</span>
+        </div>
+        <div class="module-content" id="content-4">
+            <p class="mb-4 text-gray-600">Este módulo se centra en José Carlos Mariátegui y su adaptación del marxismo a la realidad latinoamericana.</p>
+
+            <details>
+                <summary>Introducción y propuesta de un socialismo indoamericano</summary>
+                <div class="details-content">
+                    <p>José Carlos Mariátegui (1894-1930), pensador peruano, aplicó sistemáticamente el marxismo a la realidad peruana y latinoamericana.</p>
+                    <p>Propuso un <strong>"socialismo indoamericano"</strong>, no como "calco y copia" de modelos europeos, sino como una <strong>"creación heroica"</strong> que diera vida al socialismo con la propia realidad y lenguaje de Indoamérica.</p>
+                    <p>Reconocía la contradicción entre lo nacional y lo foráneo.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Adaptación del método marxista a la realidad latinoamericana</summary>
+                <div class="details-content">
+                    <p>Realizó una profunda <strong>"peruanización"</strong> del marxismo, considerando la fuerte presencia indígena y campesina.</p>
+                    <p>Consideraba a las <strong>comunidades indígenas</strong> portadoras de un potencial revolucionario socialista decisivo. Veía a las masas indígenas como el auténtico "proletariado" del continente.</p>
+                    <p>La revolución socialista debía significar el bienestar de la masa peruana (mayoría indígena y campesina). Contrastaba con visiones que insistían solo en el carácter obrero.</p>
+                    <p>Su método marxista era dialéctico, apoyado en la realidad, buscando investigaciones concretas y trascendiendo el dato hacia la interpretación histórica, política y económica.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Crítica a limitaciones y dogmatismos del comunismo internacional</summary>
+                <div class="details-content">
+                    <p>Mantuvo una postura crítica frente al dogmatismo de ciertas interpretaciones (predominio soviético).</p>
+                    <p>Cuestionaba la insistencia de la Internacional Comunista (Comintern) en imponer el modelo ruso como estrategia única, sin considerar las <strong>particularidades de la región</strong>.</p>
+                    <p>Sus planteamientos fueron cuestionados en congresos latinoamericanos (1929). "No aceptó subordinarse a la jerarquía comunista".</p>
+                </div>
+            </details>
+
+             <details>
+                <summary>Concepción mariateguista de la praxis revolucionaria</summary>
+                <div class="details-content">
+                    <p>Articulación dialéctica de elementos <strong>objetivos y subjetivos</strong>.</p>
+                    <p>El marxismo no es solo análisis objetivo, sino también fuerza subjetiva impulsada por la <strong>voluntad y la conciencia</strong>.</p>
+                    <p>Enfoque objetivo-subjetivo: importancia de la investigación concreta (objetivo) y del papel de la interpretación y voluntad revolucionaria (subjetivo).</p>
+                    <p>Centralidad del <strong>"mito revolucionario"</strong>: grandes ideales, estados de ánimo populares y pasionales que movilizan a las masas.</p>
+                    <p>Reconocía la función histórica de la voluntad y la violencia revolucionaria en ciertos contextos.</p>
+                </div>
+            </details>
+
+             <details>
+                <summary>Análisis de la realidad peruana y latinoamericana (Materialismo Histórico y Dependencia)</summary>
+                <div class="details-content">
+                    <p>Aplicó rigurosamente el <strong>materialismo histórico</strong>. Los problemas fundamentales (indio, educativo) tenían raíces económicas (problema de la tierra).</p>
+                    <p>Su enfoque en las particularidades económicas y sociales (estructuras semi-feudales, colonialismo) implica una comprensión de las <strong>relaciones de dependencia</strong> y sus limitaciones para el desarrollo autónomo.</p>
+                    <p>Su crítica a modelos externos se relaciona con superar la dependencia intelectual y política.</p>
+                </div>
+            </details>
+
+             <details>
+                <summary>Importancia del mito y la mística revolucionaria</summary>
+                <div class="details-content">
+                    <p>El <strong>"mito revolucionario"</strong> (ideales que movilizan) era crucial. Actuaba como fuerza unificadora.</p>
+                    <p>La <strong>mística revolucionaria</strong> (pasión, voluntad) era esencial. "Combato, luego existo" ilustra la primacía de la acción.</p>
+                    <p>Su pensamiento evolucionó hacia un marxismo más analítico, sin abandonar la comprensión de la importancia de los ideales y la voluntad.</p>
+                </div>
+            </details>
+
+             <details>
+                <summary>Diálogo con otras corrientes y búsqueda de fórmulas inéditas</summary>
+                <div class="details-content">
+                    <p>Estableció un diálogo crítico con otras corrientes (Sorel, Nietzsche), sin limitarse al marxismo ortodoxo.</p>
+                    <p>Buscaba <strong>fórmulas teóricas inéditas</strong> que respondieran a la singularidad latinoamericana.</p>
+                    <p>Su objetivo era crear un socialismo original, no una repetición, marcando un camino de independencia teórica y política.</p>
+                </div>
+            </details>
+            <p class="mt-4 text-gray-600">Mariátegui adaptó creativamente el marxismo a América Latina, enfocándose en la cuestión indígena, criticando el dogmatismo y buscando un socialismo indoamericano.</p>
+        </div>
+    </div>
+
+    <div class="module-container">
+        <div class="module-header" onclick="toggleModule(5)">
+            <span>Módulo 5: Temas Contemporáneos y Vigencia del Marxismo-Leninismo-Mariáteguismo</span>
+             <span class="arrow-indicator" id="arrow-5">▼</span>
+        </div>
+        <div class="module-content" id="content-5">
+            <p class="mb-4 text-gray-600">Este módulo aplica los principios del marxismo-leninismo-mariateguismo a los desafíos contemporáneos.</p>
+
+            <details>
+                <summary>Análisis de la globalización capitalista, explotación y dependencia</summary>
+                <div class="details-content">
+                    <p>La <strong>globalización capitalista</strong> es vista como una nueva fase de expansión del capital, intensificando la acumulación y generando nuevas formas de explotación y dependencia.</p>
+                    <p>El <strong>marxismo-leninismo</strong> aporta la comprensión del imperialismo y cómo la dominación adopta formas más sutiles (políticas neoliberales, dependencia tecnológica, control financiero).</p>
+                    <p>Desde <strong>Mariátegui</strong>, es crucial analizar cómo la globalización perpetúa la dependencia histórica en América Latina, articulándose con estructuras preexistentes y generando nuevas formas de explotación de recursos y trabajo en la periferia.</p>
+                    <p>La explotación abarca precariedad laboral, tecnología, información y cadenas globales de mercancías.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Papel de los medios de comunicación y batalla comunicacional</summary>
+                <div class="details-content">
+                    <p>Los medios masivos suelen estar controlados por clases dominantes y grupos económicos, difundiendo ideología favorable a sus intereses y desinformando.</p>
+                    <p>Esto plantea una <strong>"batalla comunicacional"</strong> para contrarrestar la manipulación mediática.</p>
+                    <p>El marxismo-leninismo subraya la necesidad de develar falsedades ideológicas.</p>
+                    <p>Mariátegui destacó la importancia de la cultura e ideología. Hoy, implica generar narrativas propias y comunicación descentralizada.</p>
+                    <p>Las <strong>herramientas tecnológicas</strong> (apps, redes) son clave para difundir verdad, fortalecer conciencia y construir programas de emancipación mental frente al monopolio mediático.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Importancia de la organización popular y unidad revolucionaria</summary>
+                <div class="details-content">
+                    <p>Principios fundamentales del marxismo-leninismo: organización y unidad.</p>
+                    <p>Lenin: necesidad de partido de vanguardia.</p>
+                    <p>Mariátegui: importancia de la <strong>alianza obrero-campesina-indígena</strong> en América Latina.</p>
+                    <p>En el contexto actual, a pesar de la fragmentación, se insiste en superar divisiones y construir unidad basada en intereses comunes de clases populares.</p>
+                    <p>La <strong>organización popular</strong> (barrios, trabajo, comunidades, virtual) es crucial para generar poder desde abajo.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Debates actuales sobre la construcción del socialismo</summary>
+                <div class="details-content">
+                    <p>La construcción del socialismo ha tenido diversas experiencias y debates.</p>
+                    <p>Debates actuales: forma de propiedad, planificación, partido-Estado, democracia socialista, derechos humanos, estrategias de transición.</p>
+                    <p>Es fundamental el <strong>análisis crítico de experiencias históricas</strong> (aciertos y errores).</p>
+                    <p>El pensamiento de Mariátegui (creación heroica, adaptación) invita a buscar <strong>fórmulas originales</strong> para América Latina, sin repetir modelos externos.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Relevancia del pensamiento crítico y revisión constante de la teoría</summary>
+                <div class="details-content">
+                    <p>El pensamiento crítico y la revisión son inherentes al marxismo.</p>
+                    <p>Lucha contra el <strong>dogmatismo</strong> (repetición acrítica, incapacidad de análisis) y el <strong>revisionismo</strong> (adaptación a la burguesía, renuncia a la revolución).</p>
+                    <p>Mariátegui ejemplificó la aplicación creativa y la búsqueda de fórmulas inéditas.</p>
+                    <p>Los nuevos fenómenos (globalización, tecnología, crisis ecológica, diversidad) exigen <strong>actualización constante</strong> de la teoría para mantener su relevancia.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Utilización de herramientas tecnológicas</summary>
+                <div class="details-content">
+                    <p>Las tecnologías (internet, redes, apps) ofrecen nuevas oportunidades para <strong>difusión de ideas socialistas y movilización colectiva</strong>.</p>
+                    <p>Pueden combatir desinformación, crear comunidades, organizar acciones.</p>
+                    <p>Fundamentales para elevar conciencia de clase, fortalecer organización y construir hegemonía alternativa.</p>
+                    <p>Requiere ser conscientes de riesgos (vigilancia, manipulación) y desarrollar estrategias para mitigarlos.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Lucha contra revisionismo, dogmatismo y otras desviaciones</summary>
+                <div class="details-content">
+                    <p>Tarea fundamental para mantener la vitalidad del marxismo-leninismo-mariateguismo.</p>
+                    <p><strong>Revisionismo actual:</strong> diluir carácter anticapitalista, reformismo, adopción de ideología burguesa.</p>
+                    <p><strong>Dogmatismo actual:</strong> repetición acrítica, incapacidad de análisis dialéctico, sectarismo.</p>
+                    <p><strong>Otras desviaciones:</strong> economicismo, voluntarismo, posmodernismo.</p>
+                    <p>La vigencia depende de mantenerse como teoría viva, en desarrollo, capaz de analizar críticamente la realidad y guiar la acción revolucionaria.</p>
+                </div>
+            </details>
+             <p class="mt-4 text-gray-600">Este módulo conecta los fundamentos teóricos con los desafíos y herramientas del mundo contemporáneo, reafirmando la vigencia del pensamiento crítico marxista.</p>
+        </div>
+    </div>
+
+    <script>
+        // Variable para rastrear el módulo actualmente abierto
+        let openModuleId = null;
+
+        function toggleModule(moduleId) {
+            const content = document.getElementById(`content-${moduleId}`);
+            const arrow = document.getElementById(`arrow-${moduleId}`);
+
+            // Si se hace clic en el módulo ya abierto, cerrarlo
+            if (openModuleId === moduleId) {
+                content.style.display = 'none';
+                content.classList.remove('active');
+                arrow.classList.remove('rotated');
+                openModuleId = null; // Ningún módulo está abierto
+            } else {
+                // Cerrar el módulo que estaba abierto (si hay uno)
+                if (openModuleId !== null) {
+                    const previousContent = document.getElementById(`content-${openModuleId}`);
+                    const previousArrow = document.getElementById(`arrow-${openModuleId}`);
+                    if (previousContent) previousContent.style.display = 'none';
+                    if (previousContent) previousContent.classList.remove('active');
+                     if (previousArrow) previousArrow.classList.remove('rotated');
+                }
+
+                // Abrir el nuevo módulo
+                content.style.display = 'block';
+                content.classList.add('active');
+                arrow.classList.add('rotated');
+                openModuleId = moduleId; // Registrar el módulo abierto
+            }
+        }
+    </script>
+
+</body>
+</html>
